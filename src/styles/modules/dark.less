@@ -1,8 +1,8 @@
 html.theme-change {
-  transition: all .15s;
+  transition: all 0.15s;
 
   * {
-    transition: all .15s;
+    transition: all 0.15s;
   }
 }
 
@@ -42,17 +42,17 @@ html.dark {
     header,
     main,
     footer {
-      background: #42445A;
+      background: #42445a;
     }
   }
 
   .progress {
-    background: #42445A !important;
+    background: #42445a !important;
   }
 
   .switch {
     input {
-      &:checked+.slider {
+      &:checked + .slider {
         background: @blue;
 
         &:before {
@@ -73,7 +73,7 @@ html.dark {
   input,
   select,
   textarea {
-    background: #42445A !important;
+    background: #42445a !important;
     color: #fff !important;
 
     &::placeholder {
@@ -87,7 +87,7 @@ html.dark {
   }
 
   button {
-    background: #42445A;
+    background: #42445a;
     color: #dfdfdf;
 
     &.outlined {
@@ -100,8 +100,10 @@ html.dark {
     }
   }
 
-  &.dark-elements, &.dark-navbar {
-    .navbar, .bottombar {
+  &.dark-elements,
+  &.dark-navbar {
+    .navbar,
+    .bottombar {
       background: #272836 !important;
       box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.045);
 
@@ -110,7 +112,7 @@ html.dark {
         color: #fff !important;
       }
     }
-    
+
     .navbar {
       color: #fff;
     }
@@ -119,12 +121,12 @@ html.dark {
       background: #272832 !important;
       color: #fff !important;
     }
-    
+
     .card {
       header,
       main,
       footer {
-        background: #42445A !important;
+        background: #42445a !important;
       }
     }
   }
