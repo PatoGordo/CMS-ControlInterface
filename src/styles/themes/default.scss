@@ -1,7 +1,0 @@
-body {
-  background: var(--theme_light-background-primary);
-  color: var(--theme_light-color);
-  &.fade-transition {
-    transition: background-color 0.3s;
-  }
-}

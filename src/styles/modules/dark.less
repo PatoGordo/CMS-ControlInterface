@@ -1,0 +1,131 @@
+html.theme-change {
+  transition: all .15s;
+
+  * {
+    transition: all .15s;
+  }
+}
+
+html.dark {
+  body {
+    background: #24242d;
+    color: #fff;
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  h2 {
+    color: #eeeeee;
+  }
+
+  h3 {
+    color: #dfdfdf;
+  }
+
+  p,
+  span,
+  q,
+  li,
+  dd,
+  dt,
+  label {
+    color: #dfdfdf;
+  }
+
+  .card {
+    header h3 {
+      color: #fff;
+    }
+
+    header,
+    main,
+    footer {
+      background: #42445A;
+    }
+  }
+
+  .progress {
+    background: #42445A !important;
+  }
+
+  .switch {
+    input {
+      &:checked+.slider {
+        background: @blue;
+
+        &:before {
+          background: white;
+        }
+      }
+    }
+
+    .slider {
+      background: #2f2f3b;
+
+      &:before {
+        background: #464658;
+      }
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    background: #42445A !important;
+    color: #fff !important;
+
+    &::placeholder {
+      color: #dedede !important;
+    }
+
+    &.outlined {
+      background: transparent !important;
+      border: 1px solid #878787;
+    }
+  }
+
+  button {
+    background: #42445A;
+    color: #dfdfdf;
+
+    &.outlined {
+      border: 1px solid #878787;
+      background: transparent;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+    }
+  }
+
+  &.dark-elements, &.dark-navbar {
+    .navbar, .bottombar {
+      background: #272836 !important;
+      box-shadow: 0 3px 6px 0 rgba(255, 255, 255, 0.045);
+
+      &.content {
+        background: transparent !important;
+        color: #fff !important;
+      }
+    }
+    
+    .navbar {
+      color: #fff;
+    }
+
+    .mobile-content {
+      background: #272832 !important;
+      color: #fff !important;
+    }
+    
+    .card {
+      header,
+      main,
+      footer {
+        background: #42445A !important;
+      }
+    }
+  }
+}
