@@ -4,9 +4,9 @@ import { reactive, watch } from "vue";
 export const authStore = reactive({
   isLoggedin: localStorage.getItem("app-auth-token") ? true : false,
   token: localStorage.getItem("app-auth-token") || "",
-  user: JSON.parse(localStorage.getItem("app-auth-user") || "") || {},
-  name: JSON.parse(localStorage.getItem("app-auth-user") || "").name || "",
-  email: JSON.parse(localStorage.getItem("app-auth-user") || "").email || "",
+  user: JSON.parse(localStorage.getItem("app-auth-user") || "{}"),
+  name: "",
+  email: "",
   password: "",
   async signIn() {
     try {
