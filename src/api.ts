@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 
 const token = localStorage.getItem("app-auth-token");
 
-const baseURL = "";
+const baseURL = "https://cms-back-end.vercel.app/";
 
 export const api = axios.create({
   baseURL,
