@@ -40,6 +40,7 @@ onBeforeMount(async () => {
 <template>
   <div>
     <h2 class="title">{{ cms?.name }}</h2>
+    <p>CMS id: {{ cms?._id }}</p>
     <p>
       API Key:
       {{
